@@ -1,6 +1,7 @@
 public enum BodyType
 {
-    Crown,
+    Kings,
+    Princess,
     Lineage,
     Knights,
     Clergy,

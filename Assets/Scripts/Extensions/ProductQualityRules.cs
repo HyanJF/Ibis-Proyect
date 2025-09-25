@@ -41,8 +41,11 @@ public static class ProductQualityRules
                 if (rand < 0.5f) return QualityType.Choice;
                 return QualityType.Prime;
 
-            case BodyType.Crown:
+            case BodyType.Princess:
                 if (rand < 0.25f) return QualityType.Choice;
+                return QualityType.Prime;
+
+            case BodyType.Kings:
                 return QualityType.Prime;
 
             default:
@@ -55,8 +58,8 @@ public static class ProductQualityRules
         // Bonos ajustados según el tipo de cuerpo
         switch (quality)
         {
-            case QualityType.Prime: return type == BodyType.Crown ? 1.5f : 1.25f;
-            case QualityType.Choice: return type == BodyType.Crown ? 1.3f : 1.15f;
+            case QualityType.Prime: return type == BodyType.Kings ? 1.5f : 1.25f;
+            case QualityType.Choice: return type == BodyType.Princess ? 1.3f : 1.15f;
             case QualityType.Select: return 1.1f;
             case QualityType.Standard: return 1.05f;
             case QualityType.Commercial: return 1f;

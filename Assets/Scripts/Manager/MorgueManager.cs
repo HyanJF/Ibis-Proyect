@@ -19,7 +19,8 @@ public class MorgueManager : MonoBehaviour
     public int minClergy = 7, maxClergy = 11;
     public int minKnights = 10, maxKnights = 13;
     public int minLineage = 11, maxLineage = 16;
-    public int minCrown = 12, maxCrown = 20;
+    public int minPrincess = 12 , maxPrincess = 18;
+    public int minKing = 15, maxKing = 25;
 
     public BodySO GenerateBody()
     {
@@ -50,7 +51,8 @@ public class MorgueManager : MonoBehaviour
     private BodyType GetRandomBodyType()
     {
         float rand = Random.value;
-        if (rand < 0.02f) return BodyType.Crown;
+        if (rand < 0.005f) return BodyType.Kings;
+        if (rand < 0.015f) return BodyType.Princess;
         if (rand < 0.07f) return BodyType.Lineage;
         if (rand < 0.15f) return BodyType.Knights;
         if (rand < 0.25f) return BodyType.Clergy;
@@ -69,7 +71,8 @@ public class MorgueManager : MonoBehaviour
             case BodyType.Clergy: return Random.Range(minClergy, maxClergy + 1);
             case BodyType.Knights: return Random.Range(minKnights, maxKnights + 1);
             case BodyType.Lineage: return Random.Range(minLineage, maxLineage + 1);
-            case BodyType.Crown: return Random.Range(minCrown, maxCrown + 1);
+            case BodyType.Princess: return Random.Range(minPrincess, maxPrincess + 1);
+            case BodyType.Kings: return Random.Range(minKing, maxKing + 1);
             default: return 0;
         }
     }

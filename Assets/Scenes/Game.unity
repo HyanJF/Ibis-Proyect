@@ -3394,7 +3394,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   roomName: Morgue
-  isCurrentRoom: 0
+  isCurrentRoom: 1
 --- !u!114 &1795695020
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3412,7 +3412,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 0764de4de88434b4ea6ff8012287d5f9, type: 2}
   - {fileID: 11400000, guid: 526f5d89d7db8b348b9159cc1da15f0b, type: 2}
   - {fileID: 11400000, guid: 73381645eefcb044ea064f884f3b4f28, type: 2}
-  - {fileID: 11400000, guid: 48c143662e76268419746fd9f78bac4d, type: 2}
+  - {fileID: 11400000, guid: 56191410437a1c041a8806dffcdc2a5c, type: 2}
   organosBase:
   - {fileID: 11400000, guid: f6476abf8cac7c848bf4e66da8d15fdf, type: 2}
   - {fileID: 11400000, guid: 2f3346bae4047ee4d82d40f226deb7dd, type: 2}
@@ -3455,8 +3455,10 @@ MonoBehaviour:
   maxKnights: 12
   minLineage: 8
   maxLineage: 14
-  minCrown: 10
-  maxCrown: 20
+  minPrincess: 12
+  maxPrincess: 18
+  minKing: 15
+  maxKing: 25
 --- !u!1 &1877058983
 GameObject:
   m_ObjectHideFlags: 0

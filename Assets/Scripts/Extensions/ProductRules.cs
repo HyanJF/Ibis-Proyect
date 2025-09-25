@@ -8,13 +8,13 @@ public static class ProductRules
     {
         { "Head", new List<string> { "Eye", "Ear", "Teeth", "Tongue", "Nose", "Brain" } },
         { "HandOrFoot", new List<string> { "Finger" } },
-        { "Stomach", new List<string> { "GastricJuice", "Esophagus" } }, // Esophagus depende de Stomach o Head
-        { "Liver", new List<string> { "Bile", "Gallbladder" } }, // Gallbladder depende de Liver
+        { "Stomach", new List<string> { "GastricJuice", "Esophagus" } }, 
+        { "Liver", new List<string> { "Bile", "Gallbladder" } }, 
         { "Kidney", new List<string> { "Urine" } },
-        { "Guts", new List<string> { "Appendix" } }, // Apéndice depende de tripas (Guts)
-        { "Eye", new List<string> { "Tears" } }, // Lágrimas dependen de ojos
-        { "Tongue", new List<string> { "Saliva" } }, // Saliva depende de lengua
-        { "Ear", new List<string> { "Earwax" } } // Cera depende de orejas
+        { "Guts", new List<string> { "Appendix" } }, 
+        { "Eye", new List<string> { "Tears" } }, 
+        { "Tongue", new List<string> { "Saliva" } },
+        { "Ear", new List<string> { "Earwax" } } 
     };
 
     // Verifica si un producto puede generarse según dependencias

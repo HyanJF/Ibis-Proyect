@@ -62,7 +62,7 @@ public class TestsMorgue : MonoBehaviour
             // --- Comprobar duplicados ---
             if (uniqueProducts.Contains(product.baseSO.productName))
             {
-                Debug.LogWarning($"Duplicado detectado en este cuerpo: {product.baseSO.productName}");
+                Debug.Log($"Duplicado detectado en este cuerpo: {product.baseSO.productName}");
             }
             else
             {
