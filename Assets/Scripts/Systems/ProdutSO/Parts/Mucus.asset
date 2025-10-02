@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Mucus
   m_EditorClassIdentifier: 
   productName: Mucus
-  productType: 3
+  productType: 1
   icon: {fileID: 0}
-  basePrice: 25
+  basePrice: 2
   hasQuality: 0

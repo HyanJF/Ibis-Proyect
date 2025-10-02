@@ -3414,9 +3414,12 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 73381645eefcb044ea064f884f3b4f28, type: 2}
   - {fileID: 11400000, guid: 56191410437a1c041a8806dffcdc2a5c, type: 2}
   organosBase:
+  - {fileID: 11400000, guid: 037a6d7f4ed96184198f1e43cb3ab4b0, type: 2}
   - {fileID: 11400000, guid: f6476abf8cac7c848bf4e66da8d15fdf, type: 2}
-  - {fileID: 11400000, guid: 2f3346bae4047ee4d82d40f226deb7dd, type: 2}
   - {fileID: 11400000, guid: e33bfc7e16d616c46803493bed2ac88f, type: 2}
+  - {fileID: 11400000, guid: 4eaba8eb4cbf2884abbe756c15b7d5f4, type: 2}
+  - {fileID: 11400000, guid: 2f3346bae4047ee4d82d40f226deb7dd, type: 2}
+  - {fileID: 11400000, guid: 0c939471e71d0174c85e5d708e5a23b4, type: 2}
   - {fileID: 11400000, guid: f555b2c36a794b24fac3582d9ce1f4a1, type: 2}
   - {fileID: 11400000, guid: b0d61b2f066c04043850cda94227cd9a, type: 2}
   - {fileID: 11400000, guid: 29874842046d9824e810b7651832a59f, type: 2}
@@ -3431,22 +3434,33 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 413f2c10b3cbfc54880a0730ae8892c9, type: 2}
   - {fileID: 11400000, guid: 7a110c05d89a2fd4b99fa38808e40c6f, type: 2}
   - {fileID: 11400000, guid: 49260c7f9f92e604d91e782504d47416, type: 2}
-  - {fileID: 11400000, guid: 71e5e0dacd40aca4f95bac81bd2180a9, type: 2}
   - {fileID: 11400000, guid: 00fed27d7df168948aa577d259c60ac8, type: 2}
   - {fileID: 11400000, guid: 28b60a8c09a998b469c306216bee3773, type: 2}
   - {fileID: 11400000, guid: 1970aac7f7b36e44ead69647f5a0e0d0, type: 2}
   - {fileID: 11400000, guid: 73439a844d138dc42a193a87c2ee63a8, type: 2}
   meatBase:
+  - {fileID: 11400000, guid: 20860e47416949a43a2a99a2dc04b7a9, type: 2}
   - {fileID: 11400000, guid: b107d90c13e7d5b48bfc8697752cba41, type: 2}
+  - {fileID: 11400000, guid: 518ca86b45b60ba499a9d4ed39d32347, type: 2}
   gutsBase:
   - {fileID: 11400000, guid: cfd934ed49afc3f4781ed12f8ae0cbc2, type: 2}
   partsBase:
+  - {fileID: 11400000, guid: 5849097f02307cf47ba886daeac15406, type: 2}
   - {fileID: 11400000, guid: bdf39d344d64aa94fba8988ba6728dd5, type: 2}
+  - {fileID: 11400000, guid: fe722218fe058654daf554f24e093f59, type: 2}
+  - {fileID: 11400000, guid: df62e33aafc6c9145bdad1a9b3135081, type: 2}
   - {fileID: 11400000, guid: 10475587c4cff9b488eb89bdb0cf7680, type: 2}
+  - {fileID: 11400000, guid: 71e5e0dacd40aca4f95bac81bd2180a9, type: 2}
   minHomeless: 2
   maxHomeless: 3
   minPeasants: 3
   maxPeasants: 6
+  minArtisans: 4
+  maxArtisans: 8
+  minMerchants: 5
+  maxMerchants: 9
+  minSquires: 6
+  maxSquires: 10
   minShepherds: 4
   maxShepherds: 8
   minClergy: 5
@@ -3455,10 +3469,13 @@ MonoBehaviour:
   maxKnights: 12
   minLineage: 8
   maxLineage: 14
-  minPrincess: 12
-  maxPrincess: 18
-  minKing: 15
-  maxKing: 25
+  minHeirs: 12
+  maxHeirs: 18
+  minCrown: 15
+  maxCrown: 25
+  minEmperor: 20
+  maxEmperor: 30
+  maxProductsPerBody: 20
 --- !u!1 &1877058983
 GameObject:
   m_ObjectHideFlags: 0

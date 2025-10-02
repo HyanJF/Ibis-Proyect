@@ -5,17 +5,24 @@ public static class ProductRules
 {
     // --- Dependencias biológicas ---
     public static Dictionary<string, List<string>> Dependencies = new Dictionary<string, List<string>>()
-    {
-        { "Head", new List<string> { "Eye", "Ear", "Teeth", "Tongue", "Nose", "Brain" } },
-        { "HandOrFoot", new List<string> { "Finger" } },
-        { "Stomach", new List<string> { "GastricJuice", "Esophagus" } }, 
-        { "Liver", new List<string> { "Bile", "Gallbladder" } }, 
-        { "Kidney", new List<string> { "Urine" } },
-        { "Guts", new List<string> { "Appendix" } }, 
-        { "Eye", new List<string> { "Tears" } }, 
-        { "Tongue", new List<string> { "Saliva" } },
-        { "Ear", new List<string> { "Earwax" } } 
-    };
+{
+    // Cabeza
+    { "Head", new List<string> { "Eye", "Ear", "Teeth", "Tongue", "Nose", "Brain" } },
+
+    // Extremidades
+    { "HandOrFoot", new List<string> { "Finger" } },
+
+    // Órganos internos
+    { "Stomach", new List<string> { "GastricJuice" } },
+    { "Liver", new List<string> { "Bile", "Gallbladder" } },
+    { "Kidney", new List<string> { "Urine" } },
+    { "Guts", new List<string> { "Appendix" } }, 
+
+    // Partes dependientes de órganos
+    { "Eye", new List<string> { "Tears" } },
+    { "Tongue", new List<string> { "Saliva" } },
+    { "Ear", new List<string> { "Earwax" } }
+};
 
     // Verifica si un producto puede generarse según dependencias
     public static bool IsDependencySatisfied(string product, HashSet<string> generatedProducts)
@@ -23,6 +30,9 @@ public static class ProductRules
         // Caso especial: dedos requieren mano o pie
         if (product == "Finger")
             return generatedProducts.Contains("Hand") || generatedProducts.Contains("Foot");
+
+        if (product == "Esophagus")
+            return generatedProducts.Contains("Stomach") || generatedProducts.Contains("Head");
 
         foreach (var kvp in Dependencies)
         {
@@ -79,12 +89,11 @@ public static class ProductRules
         switch (name)
         {
             case "Blood": return Random.Range(3f, 6f);
-            case "Bile": return Random.Range(0.2f, 0.8f);
+            case "Bile": return Random.Range(0.2f, 1.1f);
             case "GastricJuice": return Random.Range(0.5f, 1.5f);
             case "Lymph": return Random.Range(1f, 2f);
-            case "Sweat": return Random.Range(0.1f, 0.5f);
-            case "Urine": return Random.Range(0.3f, 1f);
-            case "Mucus": return Random.Range(0.05f, 0.3f);
+            case "Sweat": return Random.Range(0.1f, 1.6f);
+            case "Urine": return Random.Range(0.3f, 1.5f);
             case "Plasma": return Random.Range(1f, 2f);
             case "WaterBody": return Random.Range(20f, 30f);
             default: return 0f;
@@ -123,6 +132,7 @@ public static class ProductRules
             case "Tears": return Random.Range(1, 6);
             case "Saliva": return Random.Range(2, 8);
             case "Earwax": return Random.Range(3, 7);
+            case "Mucus": return Random.Range(2, 5);
             default: return 1;
         }
     }

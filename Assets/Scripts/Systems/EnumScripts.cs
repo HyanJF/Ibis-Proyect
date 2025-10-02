@@ -1,11 +1,15 @@
 public enum BodyType
 {
-    Kings,
-    Princess,
+    Emperor,
+    Crown,
+    Heirs,
     Lineage,
     Knights,
     Clergy,
     Shepherds,
+    Squires,
+    Merchants,
+    Artisans,
     Peasants,
     Homeless
 
@@ -23,9 +27,13 @@ public enum ProductType
 
 public enum QualityType
 {
+    Divine,
+    Legendary,
+    Supreme,
     Prime,
     Choice,
     Select,
     Standard,
-    Commercial
+    Commercial,
+    Rotten
 }
